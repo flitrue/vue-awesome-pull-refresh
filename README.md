@@ -1,11 +1,11 @@
-# vue-pull-refresh
+# vue-awesome-pull-refresh
 [![Build Status](https://travis-ci.org/lakb248/vue-pull-refresh.svg?branch=master)](https://travis-ci.org/lakb248/vue-pull-refresh)
 
 > A pull down refresh component implements by vuejs 2.0 for mobile.
 
 ## Demo
 
-[Demo](https://lakb248.github.io/vue-pull-refresh)
+[Demo](https://flitrue.github.io/vue-awesome-pull-refresh)
 
 PS: Please use browsers that support Promise
 
@@ -14,13 +14,13 @@ PS: Please use browsers that support Promise
 ### Install
 
 ```bash
-npm install vue-pull-refresh --save
+npm install vue-awesome-pull-refresh --save
 ```
 
 ### CommonJS
 
 ```javascript
-var VuePullRefresh = require('vue-pull-refresh');
+var VuePullRefresh = require('vue-awesome-pull-refresh');
 
 new Vue({
     components: {
@@ -44,7 +44,7 @@ new Vue({
 
 ### ES6
 ```javascript
-import VuePullRefresh from 'vue-pull-refresh';
+import VuePullRefresh from 'vue-awesome-pull-refresh';
 
 new Vue({
     components: {
