@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Vue Component</title>
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="format-detection"content="telephone=no, email=no">
-        <meta name="HandheldFriendly" content="true">
-        <style>
-            * {
-                margin: 0px;
-                padding: 0px;
-            }
-            .content {
-                height: 200px;
-                background-color: green;
-                text-align: center;
-                color: #fff;
-                line-height: 200px;
-                font-size: 1rem;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="container">
-            <vue-pull-refresh :on-refresh="onRefresh">
-                <div class="content">请打开chrome浏览器的手机调试模式下拉刷新</div>
-            </vue-pull-refresh>
-        </div>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/2.0.6/vue.min.js"></script>
-        <script type="text/javascript" src="./dist/vue-pull-refresh.min.js"></script>
-        <script type="text/javascript">
-            new Vue({
-                el: '#container',
-                components: {
-                    'vue-pull-refresh': VuePullRefresh
-                },
-                methods: {
-                    onRefresh: function () {
-                        return new Promise(function (resolve, reject) {
-                            setTimeout(function () {
-                                resolve();
-                            }, 1000);
-                        });
-                    }
+
+<head>
+    <meta charset="utf-8">
+    <title>Vue Component</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .content {
+            height: 200px;
+            background-color: green;
+            text-align: center;
+            color: #fff;
+            line-height: 200px;
+            font-size: 1rem;
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/2.1.6/vue.min.js"></script>
+    <script type="text/javascript" src="./dist/vue-pull-refresh.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <vue-pull-refresh :on-refresh="onRefresh">
+            <div class="content">请打开chrome浏览器的手机调试模式下拉刷新</div>
+        </vue-pull-refresh>
+    </div>
+
+    <script type="text/javascript">
+        new Vue({
+            el: '#container',
+            components: {
+                'vue-pull-refresh': VuePullRefresh
+            },
+            methods: {
+                onRefresh: function () {
+                    return new Promise(function (resolve, reject) {
+                        setTimeout(function () {
+                            resolve();
+                        }, 1000);
+                    });
                 }
-            });
-        </script>
-    </body>
+            }
+        });
+    </script>
+</body>
+
 </html>
