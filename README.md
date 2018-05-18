@@ -1,5 +1,6 @@
 # vue-awesome-pull-refresh
 [![Build Status](https://www.travis-ci.org/flitrue/vue-awesome-pull-refresh.svg?branch=master)](https://www.travis-ci.org/flitrue/vue-awesome-pull-refresh)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fflitrue%2Fvue-awesome-pull-refresh.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fflitrue%2Fvue-awesome-pull-refresh?ref=badge_shield)
 
 > A pull down refresh component implements by vuejs 2.0 for mobile.
 
@@ -85,3 +86,6 @@ npm run dev
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fflitrue%2Fvue-awesome-pull-refresh.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fflitrue%2Fvue-awesome-pull-refresh?ref=badge_large)
