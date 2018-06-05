@@ -1,6 +1,6 @@
 {
   "name": "vue-awesome-pull-refresh",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A pull down refresh component implements by vuejs.",
   "main": "./dist/vue-pull-refresh.min.js",
   "scripts": {

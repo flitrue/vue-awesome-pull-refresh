@@ -106,8 +106,6 @@
                             supportsPassive = true;
                         }
                     });
-                    /* global window */
-                    window.addEventListener("test", null, opts);
                 } catch (e) {}
 
                 // bind touchstart event to store start position of touch
